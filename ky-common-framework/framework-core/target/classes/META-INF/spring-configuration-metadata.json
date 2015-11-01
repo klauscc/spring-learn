@@ -1,0 +1,113 @@
+{
+  "groups": [
+    {
+      "name": "kyee.cors",
+      "type": "com.kyee.framework.core.web.cors.CORSProperties",
+      "sourceType": "com.kyee.framework.core.web.cors.CORSProperties"
+    },
+    {
+      "name": "kyee.redis",
+      "type": "com.kyee.framework.core.data.redis.RedisProperties",
+      "sourceType": "com.kyee.framework.core.data.redis.RedisProperties"
+    },
+    {
+      "name": "kyee.redis.pool",
+      "type": "com.kyee.framework.core.data.redis.RedisProperties$Pool",
+      "sourceType": "com.kyee.framework.core.data.redis.RedisProperties",
+      "sourceMethod": "getPool()"
+    },
+    {
+      "name": "kyee.singledb",
+      "type": "com.kyee.framework.core.config.SingleDbProperties",
+      "sourceType": "com.kyee.framework.core.config.SingleDbProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "kyee.cors.access-control-allow-credentials",
+      "type": "java.lang.String",
+      "sourceType": "com.kyee.framework.core.web.cors.CORSProperties"
+    },
+    {
+      "name": "kyee.cors.access-control-allow-headers",
+      "type": "java.lang.String",
+      "sourceType": "com.kyee.framework.core.web.cors.CORSProperties"
+    },
+    {
+      "name": "kyee.cors.access-control-allow-methods",
+      "type": "java.lang.String",
+      "sourceType": "com.kyee.framework.core.web.cors.CORSProperties"
+    },
+    {
+      "name": "kyee.cors.access-control-allow-origin",
+      "type": "java.util.ArrayList<java.lang.String>",
+      "sourceType": "com.kyee.framework.core.web.cors.CORSProperties"
+    },
+    {
+      "name": "kyee.redis.host",
+      "type": "java.lang.String",
+      "description": "主机名",
+      "sourceType": "com.kyee.framework.core.data.redis.RedisProperties",
+      "defaultValue": "localhost"
+    },
+    {
+      "name": "kyee.redis.password",
+      "type": "java.lang.String",
+      "description": "密码",
+      "sourceType": "com.kyee.framework.core.data.redis.RedisProperties"
+    },
+    {
+      "name": "kyee.redis.pool.max-idle",
+      "type": "java.lang.Integer",
+      "description": "最大空闲时间",
+      "sourceType": "com.kyee.framework.core.data.redis.RedisProperties$Pool",
+      "defaultValue": 100
+    },
+    {
+      "name": "kyee.redis.pool.max-wait",
+      "type": "java.lang.Integer",
+      "description": "最大等待时间",
+      "sourceType": "com.kyee.framework.core.data.redis.RedisProperties$Pool",
+      "defaultValue": 1000
+    },
+    {
+      "name": "kyee.redis.pool.min-idle",
+      "type": "java.lang.Integer",
+      "description": "最小空闲时间",
+      "sourceType": "com.kyee.framework.core.data.redis.RedisProperties$Pool",
+      "defaultValue": 10
+    },
+    {
+      "name": "kyee.redis.port",
+      "type": "java.lang.Integer",
+      "description": "端口",
+      "sourceType": "com.kyee.framework.core.data.redis.RedisProperties",
+      "defaultValue": 6379
+    },
+    {
+      "name": "kyee.singledb.max-active",
+      "type": "java.lang.Integer",
+      "description": "最大连接池数量",
+      "sourceType": "com.kyee.framework.core.config.SingleDbProperties",
+      "defaultValue": -1
+    },
+    {
+      "name": "kyee.singledb.password",
+      "type": "java.lang.String",
+      "description": "密码",
+      "sourceType": "com.kyee.framework.core.config.SingleDbProperties"
+    },
+    {
+      "name": "kyee.singledb.url",
+      "type": "java.lang.String",
+      "description": "数据库连接url",
+      "sourceType": "com.kyee.framework.core.config.SingleDbProperties"
+    },
+    {
+      "name": "kyee.singledb.username",
+      "type": "java.lang.String",
+      "description": "用户名",
+      "sourceType": "com.kyee.framework.core.config.SingleDbProperties"
+    }
+  ]
+}

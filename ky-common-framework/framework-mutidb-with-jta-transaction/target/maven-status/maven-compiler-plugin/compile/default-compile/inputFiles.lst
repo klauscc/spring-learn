@@ -1,0 +1,4 @@
+/Users/chengfeng/Documents/京颐/code/ky-common-framework/framework-mutidb-with-jta-transaction/src/main/java/com/kyee/framework/mutidb/jta/config/DataSourceConfiguration.java
+/Users/chengfeng/Documents/京颐/code/ky-common-framework/framework-mutidb-with-jta-transaction/src/main/java/com/kyee/framework/mutidb/jta/config/TrancationConfiguration.java
+/Users/chengfeng/Documents/京颐/code/ky-common-framework/framework-mutidb-with-jta-transaction/src/main/java/com/kyee/framework/mutidb/jta/domain/DataSourceProperty.java
+/Users/chengfeng/Documents/京颐/code/ky-common-framework/framework-mutidb-with-jta-transaction/src/main/java/com/kyee/framework/mutidb/jta/annotation/EnableJtaMutiDb.java

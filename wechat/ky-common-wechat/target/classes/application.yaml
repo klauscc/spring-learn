@@ -1,0 +1,16 @@
+activeMq:   #jms 配置
+  brokerUrl: tcp://115.159.66.29:61616
+  text-destination: com.kyee.hcrm.wechat.text
+  event-destination: com.kyee.hcrm.wechat.event
+
+gateway:
+  host: http://115.159.66.29  #中间件的ip
+  url: ${gateway.host}/hcrmInterface?token=    #与中间件的接口url
+  user:
+    username: kyee
+    password: kyeepass
+  token:
+    enabled: true     #是否从中间件获取token。如果中间件开启了security则必须使用token
+    url: ${gateway.host}/authToken?username=%s&password=%s  #获取tokenurl
+    refreshInterval: 6600000    #获取token刷新时间
+tokenUrl: ${gateway.host}/token/get  #获取微信的access_token的 url

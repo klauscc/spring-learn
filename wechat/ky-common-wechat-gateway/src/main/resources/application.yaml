@@ -1,0 +1,38 @@
+server:
+  port: 8083
+
+activeMq:
+  brokerUrl: tcp://115.159.66.29:61616
+  text-destination: com.kyee.wechat.text
+  event-destination: com.kyee.wechat.event
+
+wechat:
+  wechatAccount: gh_9425e7682d5d
+  appId: wx2a3801c39a3d4ca7
+  secretKey: 88c72100a26e826b2d2cb4328d920fdd
+  refreshInterval: 6600000
+  ticketUrl: https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=%s&type=jsapi
+
+spring:
+  redis:
+    host: localhost
+#    password: mypassword
+    port: 6379
+    pool:
+      maxIdle: 200
+      minIdle: 0
+      maxActive: 200
+      maxWait: 1000
+  security:
+    key: kyeekyee
+    token:
+      secret: fwueo23r9ewfsbfdslfweqfsbifDFSAfdsj
+    userDetailsService:
+      authoritiesByUsernameQuery: "select username,role from t_security_authority where username = ?"
+      usersByUsernameQuery: "select username,password,enabled from t_security_user where username = ?"
+security:
+  basic:
+    enabled: false
+
+text:
+  defaultResponse: "人家现在不想和你聊天"
